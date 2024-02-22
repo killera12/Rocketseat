@@ -70,7 +70,5 @@ while(option != 3) {
     default:
       alert("Opção Inválida, tente novamente!")
   }
-
-  console.log(list)
 }
 
