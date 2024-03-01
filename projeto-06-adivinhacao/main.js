@@ -17,7 +17,7 @@ function handleTryClick(event) {
   const inputNumber = document.querySelector("#inputNumber")
 
   if(Number(inputNumber.value) > 10 || Number(inputNumber.value) < 0){
-    alert("Por favor, digite apenas números de 1 a 10.")
+    alert("Por favor, digite apenas números de 0 a 10.")
   } else
 {
   if(Number(inputNumber.value) == randomNumber){
