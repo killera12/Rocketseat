@@ -95,10 +95,13 @@ function expenseAdd(newExpense){
 
     // Adiciona o item na lista.
     expenseList.append(expenseItem)
+
+    // Limpa o formulário
+    formClear()
+
     
     // Atualiza os totais
     updateTotals()
-
   } catch (error) {
     alert("Não foi possível atualizar a lista de defesas")
     console.log(error)
@@ -168,3 +171,13 @@ expenseList.addEventListener("click", function(event) {
   // Atualiza os totais
   updateTotals()
 })
+
+function formClear() {
+  // Limpa os inputs
+  expense.value = ""
+  category.value = ""
+  amount.value = ""
+
+  // Coloca o foco no input de despesa.
+  expense.focus()
+}
